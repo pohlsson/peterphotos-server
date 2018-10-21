@@ -110,7 +110,7 @@ var port = 4000;
 var server = (0, _express2.default)();
 
 // Creating a single index route to server our React application from.
-server.get('/album', function (req, res) {
+server.get('/', function (req, res) {
   var sheet = new _styledComponents.ServerStyleSheet(); // <-- creating out stylesheet
 
   var body = (0, _server.renderToString)(sheet.collectStyles(_react2.default.createElement(_App2.default, null))); // <-- collecting styles

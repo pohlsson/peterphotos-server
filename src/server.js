@@ -9,7 +9,7 @@ const port = 4000;
 const server = express();
 
 // Creating a single index route to server our React application from.
-server.get('/album', (req, res) => {
+server.get('/', (req, res) => {
   const sheet = new ServerStyleSheet(); // <-- creating out stylesheet
 
   const body = renderToString(sheet.collectStyles(<App />)); // <-- collecting styles
